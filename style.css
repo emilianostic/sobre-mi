@@ -3,7 +3,7 @@ html {/*coloco el color de fondeo al html*/
     
     
 }
-h1, h2 {/*centrar el texto en el body*/
+h1, h2, h4 {/*centrar el texto en el body*/
     text-align: center;
 }
 span{/*alinear la imagen (del span) con los demas elementos dentro del body*/
