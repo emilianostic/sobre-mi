@@ -7,9 +7,10 @@ h1, h2 {/*centrar el texto en el body*/
     text-align: center;
 }
 span{/*alinear la imagen (del span) con los demas elementos dentro del body*/
-    margin: 0 450px 0 600px;
+    margin: 0 450px 0 620px;
 
 }
+/*coloco padding y margenes para que se noten*/
 
 ul {/*fondo de las listas desordenadasn y tamaño del relleno*/
     margin: 0 450px 0 450px;
