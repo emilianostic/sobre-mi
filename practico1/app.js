@@ -70,7 +70,7 @@ document.getElementById('calcular').onclick = function() {
         res = sumando1 / sumando2
         var resultado = res.toString()
        
-        if(resultado.length <= 20){
+        if(resultado.length <= 10){
          resultado
         }
         else{
