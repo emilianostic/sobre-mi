@@ -1,0 +1,129 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(192, 192, 236);
+}
+
+
+.calcu{
+  
+  /*position: relative;*/ 
+ 
+  width:500px;
+  height: 250px;
+  margin: auto;
+  border-color: black;
+  border-style: double;
+  background-color: rgb(193, 206, 209);
+  border-color: black;
+  border-style: solid;
+  border-radius: 15px;
+}
+
+select{
+  width: 36%;
+  margin-left: 1px;
+  margin-right: 1px;
+  font-size:small;
+  text-align: center;
+  border-width: 2px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(32, 4, 1);
+    border-radius: 5px;
+    background-color: rgb(241, 248, 247);
+}
+.input1{
+  width: 34%;
+  margin-left: 15px;
+  margin-right: 1px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: medium;
+  border-width: 2px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(32, 4, 1);
+    border-radius: 5px;
+    background-color: rgb(241, 248, 247);
+}
+.input2{
+  width: 34%;
+  margin-left: 1px;
+  margin-right: 15px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: medium;
+  border-width: 2px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(32, 4, 1);
+  border-radius: 5px;
+  background-color: rgb(241, 248, 247);
+}
+
+
+div.abajo{
+display: flex;
+  
+}
+
+
+.mostrarResultado{
+  font-family: 'Calculator', sans-serif;                                        
+  color: whitesmoke;
+  text-align: center;
+  font: bold;
+  font-size: xx-large;
+  border-color: rgb(245, 241, 241);
+  background-color:black;
+  border-radius: 5px;
+  position: relative;
+  margin: 15px;
+  padding: 25px;
+}
+
+div.div-btn{
+  display: flex; /* Utiliza flexbox para alinear los botones */
+  justify-content: center; /* Alinea horizontalmente al centro */
+ 
+
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48*/
+}
+#calcular{
+  width: 10%;
+  height: 36px;
+  margin-top: 15px;
+  margin-right: 60px;
+  border-color: black;
+  background-color: rgb(241, 248, 247);
+  border-radius: 5px;
+}
+button.reload{
+  width: 10%;
+  height: 36px;
+  margin-top: 15px;
+  margin-left: 60px;
+  font-size: x-large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-color: black;
+  background-color: rgb(241, 248, 247);
+  border-radius: 5px;
+  
+}
+
+
+/*foto para el fondo
+*/
