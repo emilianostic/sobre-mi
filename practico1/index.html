@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="icon" href="./img/calculadora.jpg">  
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="./img/calculadora.jpg">
     <title>Calculadora simple</title>
 </head>
+
 <body>
-    
-   <!--div -->
-<div class="calcu">
-    <div id="mostrar" class="mostrarResultado">
-        RESULTADO:
+
+    <div class="calcu">
+        <div id="mostrar" class="mostrarResultado">
+            RESULTADO:
+        </div>
+
+        <div class="abajo">
+            <input type="text" id="operando1" placeholder="Ingrese un número" class="input1">
+            <select name="operation" id="select">
+                <option selected disabled>Elija una operación</option>
+                <option value="suma">➕</option>
+                <option value="resta">➖</option>
+                <option value="multiplicacion">✖️</option>
+                <option value="division">➗</option>
+            </select>
+            <input type="text" id="operando2" placeholder="Ingrese un número" class="input2">
+        </div>
+        <div class="div-btn">
+            <button type="button" id="calcular" class="material-symbols-outlined">equal</button>
+            <button type="button" id="recargar" class="reload">&#8634</button>
+        </div>
+
     </div>
 
-<div class="abajo">
-<input type="text" id="operando1" placeholder="Ingrese un número" class="input1">
-<select name="operation" id="select">
-    <option selected disabled>Elija una operación</option>
-    <option value="suma">➕</option>
-    <option value="resta">➖</option>
-    <option value="multiplicacion">✖️</option>
-    <option value="division">➗</option>
-  </select>
-<input type="text" id="operando2" placeholder="Ingrese un número" class="input2">
-</div>
-<div class="div-btn">
-    <button type="button" id="calcular" class="material-symbols-outlined">equal</button>
-    <button type="button" id="recargar" class="reload">&#8634</button>
-</div>
-
-
-
-</div>
-
-
-
-
-    
 </body>
-<script src="app.js" ></script>
+<script src="app.js"></script>
+
 </html>

@@ -1,7 +1,5 @@
-
 /*body: con un 100% de altura visible de la pnatalla y que ocupe el centro de la misma. Color de fondo*/
 body {
-
   display: flex;
   height: 100vh;
   margin: 0;
@@ -9,9 +7,8 @@ body {
 }
 
 /*clase al div, el "borde" de la calculadora. Se le da el ancho y el alto, margenes automaticos, color del borde y estilo, color del fondo y px de las curvas de las esquinas redondeadas */
-.calcu{ 
-
-  width:500px;
+.calcu {
+  width: 500px;
   height: 250px;
   margin: auto;
   border-color: black;
@@ -23,78 +20,73 @@ body {
 }
 
 /* estilo de letra para calculadora con color contrastante con el fondo, borde, margen y pading para que forme la "pantalla de la calculadora" */
-.mostrarResultado{
-  font-family: 'Calculator', sans-serif;                                        
+.mostrarResultado {
+  font-family: "Calculator", sans-serif;
   color: whitesmoke;
   text-align: center;
   font: bold;
   font-size: xx-large;
-  background-color:black;
+  background-color: black;
   border-radius: 5px;
   margin: 15px;
   padding: 25px;
 }
 
 /*select: se le da el ancho en % del div que los contiene, margenes para que no se una con los input, se leda tipo deletra y tamaño alineado al centro, se le da estilo a los bordes y color de fondo*/
-select{
+select {
   width: 36%;
   margin-left: 1px;
   margin-right: 1px;
-  font-size:small;
+  font-size: small;
   text-align: center;
   border-width: 2px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgb(32, 4, 1);
-    border-radius: 5px;
-    background-color: rgb(241, 248, 247);
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(32, 4, 1);
+  border-radius: 5px;
+  background-color: rgb(241, 248, 247);
 }
 /*se dimensionan los input con sus font, centrado, colores, bordes*/
 
 input {
   width: 34%;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: medium;
   border-width: 2px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgb(32, 4, 1);
-    border-radius: 5px;
-    background-color: rgb(241, 248, 247);
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(32, 4, 1);
+  border-radius: 5px;
+  background-color: rgb(241, 248, 247);
 }
 /*se separa cada input del div que los contiene y del select dando margenes izq y derecho*/
-.input1{
+.input1 {
   margin-left: 15px;
   margin-right: 1px;
 }
 
-.input2{ 
+.input2 {
   margin-left: 1px;
   margin-right: 15px;
 }
 /*con el flex para que los elementos dentro de este div queden alineados horizontalmente*/
-div.abajo{
-display: flex;
-  
+div.abajo {
+  display: flex;
 }
 /* Utiliza flexbox para alinear los botones y Alinea horizontalmente al centro  */
-div.div-btn{
-  display: flex; 
-  justify-content: center; 
- 
+div.div-btn {
+  display: flex;
+  justify-content: center;
 }
 
 /*coloca el símbolo igual en el botón de calcular*/
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 600,
-  'GRAD' 0,
-  'opsz' 48*/
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 48 * /;
 }
-/*dimensiones, separacón con los demás elementos, bordes y colores al botón calcular*/ 
-#calcular{
+/*dimensiones, separacón con los demás elementos, bordes y colores al botón calcular*/
+#calcular {
   width: 10%;
   height: 36px;
   margin-top: 15px;
@@ -103,16 +95,15 @@ div.div-btn{
   background-color: rgb(241, 248, 247);
   border-radius: 5px;
 }
-/*dimensiones, separacón con los demás elementos, bordes y colores al botón recargar*/ 
-button.reload{
+/*dimensiones, separacón con los demás elementos, bordes y colores al botón recargar*/
+button.reload {
   width: 10%;
   height: 36px;
   margin-top: 15px;
   margin-left: 60px;
   font-size: x-large;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-color: black;
   background-color: rgb(241, 248, 247);
   border-radius: 5px;
-  
 }
