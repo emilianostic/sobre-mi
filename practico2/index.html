@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Piedra papel Tijeras</title>
+</head>
+
+<body>
+    
+    <div>
+        <h3>Piedra, Papel o Tijeras</h3>
+        <!-- <label for="nickN">Ingresa tu Nickname:</label>
+        <input type="text" id="nick"> -->
+  
+    </div>
+    <button id="ingresar">Nombre del jugador</button>
+    <div id="showGamer"></div>
+    
+       <!-- <select name="ppt" id="select" class="select">
+            <option disabled selected>PPT</option>
+            <option value="piedra">Piedra</option>
+            <option value="papel">Papel</option>
+            <option value="tijeras">Tijeras</option>
+        </select>-->
+  <div id="inicio">     
+
+<button id="play">Opciones</button>
+</div>
+
+    <div class="box" id="game">
+        <img src="./img/Adoquin1.gif" id="rock" class="rock"/>
+        <img src="./img/dibujo-de-papel.webp" id="paper" class="rock"/>
+        <img src="./img/tijeras.gif" id="scissors" class="rock"/>
+    </div>
+      
+        <div id="gamerName">  </div>
+    
+        
+       <!--  <p id="muestra"> </p> -->
+    </div>
+    <div>
+            
+        <p id="compuPPT"></p>
+    </div><br>
+    <br>
+    <br>
+      
+        <div>
+            
+            <form id="mostrarResultado"></form>
+        </div>
+
+      
+
+      <div id="result"></div>
+      <button class="juego" id="JugarNuevamente">Limpiar</button>
+    </div>
+    <div>
+        Marcador:
+    </div>
+    <div>Computadora:
+        <p id="scorePC">0</p>
+    </div>
+    <div>User:
+        <p id="scoreUser">0</p>
+    </div>
+    <div id="finalResult"></div>
+<button id="recargar">Nueva Partida</button>
+
+        <script src="piedraPapelTijeras.js"></script>
+</body>
+
+</html>
