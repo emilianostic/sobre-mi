@@ -1,76 +1,170 @@
 
-
+/*se establece la altura del body en un 100% (o vh) y se coloca la imagend e fondo*/
 body{
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: rgb(235, 231, 218);
+    background-image: url(blank-concrete-white-wall-texture-background.jpg) ;
+}
+/*estilo para el título del juego*/
+h1{
+    margin-top: 0%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-align: center;
+    color:black;
+    text-shadow: 3px  0px 0px white,
+    0px  3px 0px white,
+   -3px  0px 0px white,
+    0px -3px 0px white;
+    background-image: url(moldura.jpg);
 }
 
-img.rock{
+/*la clase cartel para el botón de ingresar nombre*/
+.cartel{
+    font-size: medium;
+    text-align: center;
+    align-items: center;
+    background-image: url(cartel.jpg);
+    height: 152px;
+    width: 224px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    border-radius: 60px;
+    border-color:azure ;
+    
+}
+/*clase llabero para desplegar las opciones del juego*/
+.llavero{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: larger;
+    background-image: url(colgador\ llaves.jpg);
+    height: 90px;
+    width: 250px;
+    border-radius: 50px;
+    margin-top: 1%;
+    border-color: black;
+    border-width: 5px;
+}
+/*clase para mantener la distancia entre los elementos dentro del div.titulo*/
+.titulo{
+display: flex;
+justify-content:space-around;
+margin-top: 1%;
+    
+}
+/*clase para mantener las opciones en el centro de la interfaz*/
+.cuadros{
+    display: flex;
+    justify-content: center;
+}
+
+/*esta clase no permite que el tablero con el resultado se vea antes de que se comience a jugar*/
+.tablero{
+    display: none;
+    justify-content: center;
+}
+
+/*carcaterísticas del nombre del jugador*/
+#showGamer{
+margin-right: 1%;
+    font-family: 'Rock Salt', cursive;
+    font-size: 200%;
+
+   
+}
+/*clase que coloca las elecciones a la izquierda en dos columnas y el resultado a la derecha*/
+
+.underbox{
+    display: flex;
+    
+   justify-content: space-around;
+   
+    align-items: center;  
+    
+}
+
+/*clase que establece las dimensiones y características del los botones con las imagenes Piedra Papel Tijeras*/
+img.ppt{
+    display: none;
     width: 150px;
     height: 10%;
     background-color: black;
-    padding: 5px;
+    padding: 10px;
+    border: double;
+    border-color: aliceblue;
+    margin: 20px;
 
 }
 
-.rock:hover {
+/*"animación", agrnada la imagen un 50% al colocar el cursor sobre cada botón de P P T*/
+.ppt:hover {
     cursor: pointer;
     transform: scale(1.5);
-    background-color: green;
 }
-
-img{
-    width: 50px;
-    height: 1000px;
-    display: none;
-}
-
-
-.box{
+/*clase para centrar la pizarra y el botón limpiar*/
+.board {
     display: flex;
-     /*flex-direction: row-reverse; /*primero veamos: por defecto en row*/
-    /*flex-direction: column; */
-    /*flex-direction: column-reverse; */
-    
-    /*Agregar más elementos (10 por ejemplo) Cuando no entran los elementos en el flex padre saltan de fila*/
-    /*flex-wrap: wrap; /*primero veamos: por defecto en nowrap*/
-    /*flex-wrap: wrap-reverse;*/
-    
-    /*Las 2 anteriores podemos unirlas en una */
-    /*flex-flow: row-reverse wrap;
-
-    /*Como alineamos los elementos internos? (quedarse con solo 3 elementos para verlo mejor)*/
-    /*justify-content: center;*/
-    /*justify-content: flex-end;*/
-    /*justify-content: flex-start;*/
-    justify-content: space-around;
-    /*justify-content: space-between;*/
-
-    /*Otra propiedad es el align-items(agregemos una altura de 500px al div padre)*/
-    
-    /*height: 500px;*/
-    align-items: center;
-    /*align-items: flex-start;
-    align-items: flex-end;
-    align-items: stretch;
-    align-items: baseline;*/
-    
-    /*(baseline alinea con respecto a la base del elemento para verlo cambiar el fort size de uno de los elem)*/
-
-    /*Otra Propiedad es align-content volvamos a configurar en a flex-wrap en wrap */
-    /*
-    height: 500px;*/
-   /*flex-wrap: wrap;*/
-   align-content: space-between;
-    /*align-content: space-around;*/
-    /*align-content: stretch;
-    align-content: flex-end;
-    align-content: flex-start;
-    */
+    justify-content: space-around;  
 }
+
+/*se incisibiliza el botón de opciones con su id*/
 #inicio{
+    visibility: hidden;;
+}
+
+/*estilo para el nombre del usuario y la opción de la PC en el tablero */
+#gamerName, #compuPPT{
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    font-size: 120%;
+
+}
+/*se oculta el botón limpiar*/
+#JugarNuevamente{
     display: none;
+}
+/*estilo para el resultado de la pizarra*/
+#mostrarResultado{
+    font-family: 'Rock Salt', cursive;
+    font-size: 150%;
+}
+/*estilo al botón para jugar nueva partida*/
+.boquete{    
+    background-image: url(agujero-pared-que-ha-desgarrado_860905-1739.jpg);
+    height: 154px;
+    width: 154px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: aliceblue;
+    border-radius: 200px;
+    border-style: none; 
+}
+
+/*se dimensiona el botón limpiar */
+.aplique{
+    text-align:right;
+    background-image: url(embutido-pared-led-hera-marco-acero-inoxidable.jpg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    width: 150px;
+    padding: 18px;
+    margin-bottom: 1x;
+    font-size: large;
+    color:black;
+    border-style: none;
+    border-radius: 20%;
+   
+    
+}
+/*mantener la posición del nombre del gamer y las opciones*/
+.nameOptions{
+    display: flex;
+    justify-content: center;
+}
+/*estilos del pizarrón con el Marcador*/
+.pizarra {
+    background-image: url(pizarron.jpg);
+    font-family: 'Rock Salt', cursive;
+    color: whitesmoke ;
+    width: 25%;
+}
+/*subrayado de la palabra Marcador*/
+#marcador{
+    text-decoration: underline;
 }
